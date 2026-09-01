@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Used only when a child taps "Try saying it" — captures their
+         attempt for on-device speech recognition comparison. No audio is
+         ever uploaded anywhere by this app's own code. -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- The app itself makes no network calls (no analytics, no ads, no
+         API calls). Declared only because Android's system speech
+         recognizer (used for the pronunciation-practice feature) may use
+         online recognition depending on the device/OS configuration —
+         see PRIVACY_POLICY.md. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Haptic feedback on taps and correct answers. -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-feature android:name="android.hardware.microphone" android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:label="BaBa Kids"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BaBaKids">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Matches the warm cream backdrop already baked into the app icon
+         artwork, so the adaptive-icon background layer blends seamlessly
+         with the foreground instead of showing a mismatched edge. -->
+    <color name="ic_launcher_background">#FFF8F0</color>
+</resources>
