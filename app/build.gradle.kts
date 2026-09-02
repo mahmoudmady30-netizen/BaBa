@@ -47,8 +47,8 @@ android {
         applicationId = "com.babakids.app"
         minSdk = 24
         targetSdk = 36
-        versionCode = 1
-        versionName = "1.0.0"
+        versionCode = 2
+        versionName = "1.0.1"
 
         buildConfigField("String", "ELEVENLABS_API_KEY", "\"${secretOrEnv("ELEVENLABS_API_KEY")}\"")
         buildConfigField("String", "ELEVENLABS_VOICE_ID", "\"${secretOrEnv("ELEVENLABS_VOICE_ID")}\"")
